@@ -1,0 +1,30 @@
+Millio Anca, 325 CA
+
+Arhiva contine 3 foldere: in, out si other_tests, alaturi de o serie de fisiere
+ale caror roluri le voi explica in continuare.
+
+In folder-ul in se gasesc testele de input pentru cele trei implementari.
+Acestea au fost generate cu ajutorul codului din fisierul generator.cpp (executabilul generator).
+Testele au nume sugestive, ID-ul fiecaruia fiind constituit din doua parti: primul
+ numar reprezentand numarul de elemente ale vectorului, iar al doilea reprezentand numarul de
+query-uri date. Ele cuprind si cazurile in care N(nr de elem din vector) >> M(nr de query-uri), N << M si N ~ M.
+
+In folder-ul out se afla output-urile testeleor din "in" aplicate fiecareia dintre cele
+trei implementari(algo1, algo2, algo3), plus cea banala(basic_algo).
+
+In folder-ul other_tests se afla un fisier numit Algo_Time in care am stocat durata
+necesara fiecarei implementari pentru a rezolva fiecare test. Aceasta se afla pe
+ultima coloana de date.
+
+In afara folder-elor mai exista fisierul Makefile care alcatuieste executabilele pentru
+cele patru implementari. Acesta mai contine si o regula "check" care verifica corectitudinea
+output-urilor celor trei implementari prin comparatie cu output-ul implementarii banale.
+Acesta mai contine si  Main-ul se gaseste in fisierele algo1.cpp, algo2.cpp, algo3.cpp respectiv
+basic_algo.cpp. In algo.h se afla header-ele pentru functiile care rezolva problema aleasa, iar in algo.cpp
+se afla implementarile acestor functii, alaturi de alte functii ajutatoare apelate de ecestea.
+
+Fisierul Tests contine comenzile care testeaza propriu-zis implementarile, aplicand testele din "in"
+si trimitand output-urile in fisierele din "out".
+
+Logica implementarilor algo1, algo2, algo3 a fost prelauta de pe site-ul "https://www.geeksforgeeks.org",
+fiind apoi adaptata cerintei temei.  
